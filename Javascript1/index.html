@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- Zoe Scott 9/17/2025 -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Birdkit</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="https://fav.farm/✅" />
+  <!-- Adapted from https://javascript30.com/ -->
+	<!-- JavaScript Drum Kit -->
+</head>
+<body id="image"><!-- Added id of "image" to body to serve as the background image -->
+
+<!-- New Info/Concepts:
+		data-key (data-)
+		keyboard (kbd)
+		audio -->
+
+<!-- I changed the "subtitle" for each key to be a different type of bird instead of the type of drum -->
+<!-- I referenced https://animalcorner.org/birds/birds-that-start-with-a/ to find different types of birds by letter -->
+  <div class="keys">
+    <div data-key="65" class="key">
+      <kbd>A</kbd>
+      <span class="sound">albatross</span>
+    </div>
+    <div data-key="83" class="key">
+      <kbd>S</kbd>
+      <span class="sound">starling</span>
+    </div>
+    <div data-key="68" class="key">
+      <kbd>D</kbd>
+      <span class="sound">duck</span>
+    </div>
+    <div data-key="70" class="key">
+      <kbd>F</kbd>
+      <span class="sound">flicker</span>
+    </div>
+    <div data-key="71" class="key">
+      <kbd>G</kbd>
+      <span class="sound">goose</span>
+    </div>
+    <div data-key="72" class="key">
+      <kbd>H</kbd>
+      <span class="sound">heron</span>
+    </div>
+    <div data-key="74" class="key">
+      <kbd>J</kbd>
+      <span class="sound">jay</span>
+    </div>
+    <div data-key="75" class="key">
+      <kbd>K</kbd>
+      <span class="sound">killdeer</span>
+    </div>
+    <div data-key="76" class="key">
+      <kbd>L</kbd>
+      <span class="sound">lark</span>
+    </div>
+  </div>
+
+<!-- All sound samples I got from https://xeno-canto.org/ -->
+
+  <audio data-key="65" src="sounds/albatross.mp3"></audio>
+  <audio data-key="83" src="sounds/starling.wav"></audio>
+  <audio data-key="68" src="sounds/duck.mp3"></audio>
+  <audio data-key="70" src="sounds/flicker.mp3"></audio>
+  <audio data-key="71" src="sounds/goose.mp3"></audio>
+  <audio data-key="72" src="sounds/heron.mp3"></audio>
+  <audio data-key="74" src="sounds/jay.mp3"></audio>
+  <audio data-key="75" src="sounds/killdeer.wav"></audio>
+  <audio data-key="76" src="sounds/lark.mp3"></audio>
+
+<script src="script.js"> </script>
+<!-- external js instead of embedded -->
+
+</body>
+</html>

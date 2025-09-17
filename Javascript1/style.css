@@ -1,0 +1,66 @@
+/* Zoe Scott 9/17/2025 */
+/* Adapted from https://javascript30.com/ - JavaScript Drum Kit */
+html {
+  font-size: 10px;
+ /* don't have background image to apply 
+  background: url('./background.jpg') bottom center;
+  background-size: cover;*/
+}
+
+body,html {
+  margin: 0 auto;
+  padding: 0;
+  font-family: sans-serif;
+}
+/* Added styling for background image */
+#image {
+	background-image: url('albatross.png');
+	background-size: auto;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	min-height: 100vh;	/*stole line from "keys" class styling so background took up more space */
+}
+.keys {
+  display: flex;
+  flex: 1;
+  /*min-height: 100vh;*/ /* commented out so the background image could take up more space */
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5em;
+}
+
+.key {
+  border: .4rem solid black;
+  border-radius: .5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  transition: all .07s ease;
+  width: 10rem;
+  text-align: center;
+  color: white;
+  background: rgba(0,0,0,0.4);
+  text-shadow: 0 0 .5rem #339999; /* changed from black to light teal */
+}
+
+.playing {
+  transform: scale(1.1);
+  /* border-color: #ffc600; */
+  border-color: #339999; /* switched the yellow color to a blue since it's my favorite color and looks better (imo) */
+  /* box-shadow: 0 0 1rem #ffc600; */
+  box-shadow: 0 0 1rem #33CCCC;
+}
+
+kbd {
+  display: block;
+  font-size: 4rem;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+ /* color: #ffc600; original color */
+  /*color: #339999; */
+  color: #CCFFFF;
+}
