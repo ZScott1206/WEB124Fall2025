@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- Zoe Scott 10/1/2025 -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Whack A Cat!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kablammo&display=swap" rel="stylesheet"> <!-- found a fun font that felt more fitting for a Whack-a-cat game -->
+ <!-- <link href='https://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'> -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="https://fav.farm/✅" />
+  <!-- Adapted from https://javascript30.com/ -->
+  <!-- Whack A cat Game  -->
+</head>
+<body>
+
+<!-- New Info/Concepts:
+		idx 
+		return
+		setTimeout -->
+
+  <h1>Whack-a-cat! <span class="score">0</span></h1> <!-- Changed name to Whack-a-cat instead of Whack-a-mole -->
+  <button id="button" onClick="startGame()">Start!</button>
+
+  <div class="game">
+    <div class="hole hole1">
+      <div class="cat"></div>
+    </div>
+    <div class="hole hole2">
+      <div class="cat"></div>
+    </div>
+    <div class="hole hole3">
+      <div class="cat"></div>
+    </div>
+    <div class="hole hole4">
+      <div class="cat"></div>
+    </div>
+    <div class="hole hole5">
+      <div class="cat"></div>
+    </div>
+    <div class="hole hole6">
+      <div class="cat"></div>
+    </div>
+  </div>
+  
+  <audio id="banjo" src="banjo.mp3"></audio> <!-- Added an audio file -->
+
+<script src="script.js"> </script>
+<!-- external js instead of embedded -->
+
+</body>
+</html>
