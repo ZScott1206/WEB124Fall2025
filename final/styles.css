@@ -1,0 +1,82 @@
+/* Zoe Scott 10/30/2025  */
+
+body {background-color: #99CCCC;
+	margin: 0 auto;
+	padding: 20px;
+	text-align: center;
+}
+label {
+	text-decoration: underline;
+	text-underline-offset: 0.25em;
+}
+#container {
+	display: flex;
+	flex-direction: column;
+}
+h1, label, input, button {
+	display: block;
+	margin: 1em auto;
+}
+input {
+	height: 3em;
+	text-align: center;
+}
+button {
+	height: 2em;
+	background-color: #CCCCFF;
+	border-color: #CC99FF;
+	color: #6600CC;
+	font-weight: bold;
+}
+button:hover {
+	color: red;
+	height: 2.25em;
+
+}
+#display {
+	display: flex;
+	flex-direction: column;
+	margin: 1em auto;
+	padding: 25px;
+}
+p {
+	padding: 5px;
+}
+#add {
+	background-color: #FF9999;
+	display: block;
+}
+#sub {
+	background-color: #FFCC99;
+	display: block;
+}
+#mul {
+	background-color: #FFFFCC;
+	display: block;
+}
+#div {
+	background-color: #99FFCC;
+	display: block;
+}
+h1 {
+	background-color: #CCFFFF;
+	background-size: 2em;
+	margin: 1em 1em;
+}
+@media (min-width: 35em){
+	p {
+		padding: 10px;
+	}
+}
+
+@media (min-width: 50em){
+	#display {
+	display: flex;
+	flex-direction: row;
+}
+	p {
+		display: block;
+		margin: 1em auto;
+		padding: 25px;
+	}
+}
